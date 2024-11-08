@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="exhibit1.html">Base</a>
+      <a href="exhibit2.html">Woods</a>
+      <a href="exhibit3.html">Village</a>
+      <a class="contactRow active" href="contact.html">Contact</a>
+      <a class="contactRow" href="gallery.html">Gallery</a>
+    </nav>
+
+    <main class="contact">
+      <h1>Contact Form</h1>
+      <form>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+          required
+        /><br />
+        <label for="topic">Topic:</label>
+
+        <select id="topic" name="topic">
+          <option value="screenshots">Screenshots</option>
+          <option value="world">World</option>
+          <option value="lore">Lore</option>
+          <option value="other">Other</option>
+        </select>
+
+        <br />
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="I would like to ask about..."
+          required
+        ></textarea>
+        <br />
+        <input id="submit" type="submit" value="Send" />
+      </form>
+    </main>
+
+    <footer class="footer">Bartłomiej Kaczyński</footer>
+  </body>
+</html>
